@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="600.0" style="-fx-background-radius: 6;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxController.MainController">
+	<children>
+		<HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="600.0">
+			<children>
+				<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="150.0" HBox.hgrow="ALWAYS">
+					<children>
+						<Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="100.0" text="Heigh &lt;2; 50&gt;" textAlignment="CENTER" />
+						<TextField id="heigh-text" fx:id="heighValue" Text="0" maxHeight="16.0" maxWidth="40.0" prefHeight="16.0" prefWidth="40.0">
+							<font>
+								<Font size="14.0" />
+							</font>
+						</TextField>
+					</children>
+				</VBox>
+				<VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="150.0" HBox.hgrow="ALWAYS">
+					<children>
+						<Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="100.0" text="Width &lt;2; 50&gt;" />
+						<TextField id="width-text" fx:id="widthValue" Text="0" maxHeight="16.0" maxWidth="40.0" prefHeight="16.0" prefWidth="40.0">
+							<font>
+								<Font size="14.0" />
+							</font>
+						</TextField>
+					</children>
+				</VBox>
+				<VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="150.0" HBox.hgrow="ALWAYS">
+					<children>
+						<Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="100.0" text="Number of live cells" />
+						<TextField id="live-cells-text" fx:id="numberOfLIveCells" Text="0" maxHeight="16.0" maxWidth="40.0" prefHeight="16.0" prefWidth="40.0">
+							<font>
+								<Font size="14.0" />
+							</font>
+						</TextField>
+					</children>
+				</VBox>
+				<VBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="150.0" HBox.hgrow="ALWAYS">
+					<children>
+						<Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="100.0" text="Number of rounds &lt;1; 10&gt;" />
+						<TextField id="rounds-text" fx:id="numberOfRounds" Text="0" maxHeight="16.0" maxWidth="40.0" prefHeight="16.0" prefWidth="40.0">
+							<font>
+								<Font size="14.0" />
+							</font>
+						</TextField>
+					</children>
+				</VBox>
+			</children>
+		</HBox>
+		<TextArea id="display-field" fx:id="displayField" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="292.0" prefWidth="600.0" VBox.vgrow="ALWAYS" />
+		<Button id="start-button" fx:id="startButton" alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Start" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+	</children>
+</VBox>

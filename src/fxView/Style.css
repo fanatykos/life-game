@@ -1,0 +1,25 @@
+.vbox,
+.hbox,
+.label{
+
+	-fx-border-radius:6.0px;
+}
+
+.button{
+	-fx-border-radius:6.0px;
+}
+
+.button:hover{
+	-fx-opacity:0.6;
+}
+
+.button:disabled{
+	-fx-background-color:grey;
+	
+}
+.text-field,
+.text-area{
+	-fx-border-radius:6.0px;
+	-fx-background-color:silver;
+	-fx-border-radius:6.0px;
+}
